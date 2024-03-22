@@ -1,0 +1,67 @@
+<xs:element name="snap_n_stick">
+        <xs:complexType>
+            <xs:sequence>
+    <xs:element name="customers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="customer" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="CustomerID">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                    <xs:minInclusive value="100000"/>
+                                    <xs:maxInclusive value="1000000000"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="firstname" type="xs:string"/>
+                            <xs:element name="lastname" type="xs:string"/>
+                            <xs:element name="email" type="xs:string"/>
+                            <xs:element name="phone" type="xs:integer"/>
+                            <xs:element name="address" type="xs:string"/>
+                            <xs:element name="city" type="xs:string"/>
+                            <xs:element name="state" type="xs:string"/>
+                            <xs:element name="zipcode" type="xs:integer"/>
+                            <xs:element name="registrationdate" type="xs:dateTime"/>    
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <!-- Define the orders element -->
+    <xs:element name="orders">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="order" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="orderID" type="xs:integer"/>
+                            <xs:element name="customerID" type="xs:string"/>
+                            <xs:element name="orderdate" type="xs:dateTime"/>
+                            <xs:element name="totalamount" type="xs:decimal"/>
+                            <xs:element name="paymentstatus" type="xs:string"/>
+                            <xs:element name="shipmentstatus" type="xs:string"/>
+                            <xs:element name="shippingaddress" type="xs:string"/>
+                            <xs:element name="billingaddress" type="xs:string"/>
+                            <xs:element name="discountcode" type="xs:string"/>
+                            <xs:element name="taxamount">
+                            <xs:simpleType>
+                                    <xs:restriction base="xs:decimal">
+                                    <xs:minInclusive value="0.0"/>
+                                    <xs:maxInclusive value="1000.0"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>  
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>

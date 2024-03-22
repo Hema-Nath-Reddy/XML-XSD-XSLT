@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xslt.xsl"?>
+<snap_n_stick xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="xsd.xsd">
+<customers>
+    <customer>
+        <CustomerID>123456789</CustomerID>
+        <firstname>John</firstname>
+        <lastname>Doe</lastname>
+        <email>john.doe@example.com</email>
+        <phone>1234567890</phone>
+        <address>123 main street</address>
+        <city>anytown city</city>
+        <state>AP</state>
+        <zipcode>500016</zipcode>
+        <registrationdate>2024-02-03 10:09:50</registrationdate>
+    </customer>
+    <customer>
+        <CustomerID>312423432</CustomerID>
+        <firstname>Doe</firstname>
+        <lastname>John</lastname>
+        <email>Doe.john@example.com</email>
+        <phone>9876543218</phone>
+        <address>456 street</address>
+        <city>sometown </city>
+        <state>TN</state>
+        <zipcode>500018</zipcode>
+        <registrationdate>2024-02-09 11:09:50</registrationdate>
+    </customer>
+    <customer>
+        <CustomerID>67465764745</CustomerID>
+        <firstname>George</firstname>
+        <lastname>Washington</lastname>
+        <email>George.Washington@example.com</email>
+        <phone>9874562344</phone>
+        <address>123 west avenue</address>
+        <city>thistown </city>
+        <state>TS</state>
+        <zipcode>500011</zipcode>
+        <registrationdate>2024-02-07 12:09:50</registrationdate>
+    </customer>
+</customers>
+<orders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="lab10.xsd">
+    <order>
+        <orderID>2343100</orderID>
+        <customerID>34253425</customerID>
+        <orderdate>2024-02-03T10:09:50</orderdate>
+        <totalamount>249.99</totalamount>
+        <paymentstatus>paid</paymentstatus>
+        <shipmentstatus>Pending</shipmentstatus>
+        <shippingaddress>123 Main Street, Anytown City, AP, 500016</shippingaddress>
+        <billingaddress>123 Main Street, Anytown City, AP, 500016</billingaddress>
+        <discountcode>None</discountcode>
+        <taxamount>5</taxamount>
+    </order>
+     <order>
+        <orderID>2343400</orderID>
+        <customerID>456745</customerID>
+        <orderdate>2024-02-03T10:09:50</orderdate>
+        <totalamount>999.99</totalamount>
+        <paymentstatus>paid</paymentstatus>
+        <shipmentstatus>Pending</shipmentstatus>
+        <shippingaddress>789 Oak Avenue, Another City, TS, 500011</shippingaddress>
+        <billingaddress>789 Oak Avenue, Another City, TS, 500011</billingaddress>
+        <discountcode>Above500</discountcode>
+        <taxamount>20</taxamount>
+    </order>
+    <order>
+        <orderID>2343300</orderID>
+        <customerID>45674567</customerID>
+        <orderdate>2024-02-03T10:09:50</orderdate>
+        <totalamount>499.99</totalamount>
+        <paymentstatus>paid</paymentstatus>
+        <shipmentstatus>Pending</shipmentstatus>
+        <shippingaddress>456 Elm Street, Othertown, TN, 500018</shippingaddress>
+        <billingaddress>456 Elm Street, Othertown, TN, 500018</billingaddress>
+        <discountcode>None</discountcode>
+        <taxamount>10</taxamount>
+    </order>
+   
+</orders>
+</snap_n_stick>
